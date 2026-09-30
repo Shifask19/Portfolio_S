@@ -1,0 +1,31 @@
+---
+slug: investment-tracker
+title: Investment Portfolio Tracker
+subtitle: Java OOP desktop/web app with JDBC and a multi-table MySQL schema
+tags: ["Java", "Full-stack"]
+tech: ["Java", "Spring Boot", "MySQL", "JDBC"]
+github: ""
+---
+
+## Problem
+
+Individual investors tracking holdings across multiple asset classes need reliable, structured record-keeping with accurate P&L calculations.
+
+## My Role
+
+Solo project built to practise Java OOP, JDBC, and relational database design.
+
+## Approach & Architecture
+
+- **Database schema** — three normalised tables (clients, holdings, transactions) with foreign keys, join queries and view definitions for portfolio summary.
+- **Data layer** — JDBC with prepared statements for all CRUD operations and protection against SQL injection.
+- **Application layer** — Spring Boot REST endpoints expose portfolio data; service-layer validation enforces business rules before writes.
+
+## Challenges
+
+- Designing queries that aggregate live holdings correctly required window functions and careful join logic.
+- Spring Boot + JDBC (without JPA) meant writing explicit SQL, which forced a deeper understanding of query planning.
+
+## Outcome
+
+TODO(Shifa): Add anything measurable — number of test cases passing, features completed, or academic/project grade.

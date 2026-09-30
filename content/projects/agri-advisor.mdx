@@ -1,0 +1,37 @@
+---
+slug: agri-advisor
+title: AgriAdvisor
+subtitle: AI/ML assistant and e-commerce platform for farmers
+tags: ["AI/ML", "Full-stack"]
+tech: ["React", "TypeScript", "Firebase", "Python", "scikit-learn"]
+github: https://github.com/Shifask19/AgriAdvisor
+role: Team Lead
+---
+
+## Problem
+
+Small-scale farmers in India lack affordable, localised guidance on which crops to grow and how to diagnose plant diseases early, leading to yield losses and wasted inputs.
+
+## My Role
+
+I led a team of four, owned the AI pipeline and backend services, and coordinated front-end integration with Firebase.
+
+## Approach & Architecture
+
+- **Crop recommendation model** — trained a scikit-learn classifier on soil type, season and regional data to suggest the best-fit crop.
+- **Disease detection** — a Python computer-vision model analyses leaf images uploaded through the React UI.
+- **IoT layer** — hardware sensors feed real-time soil-moisture and temperature data into Firestore, which the dashboard reads live.
+- **E-commerce module** — Firebase-backed product listings allow verified agri-input suppliers to list seeds and fertilisers directly to farmers.
+
+## Challenges
+
+- Labelled training data for regional crop varieties was scarce; we curated a small labelled set and used data augmentation.
+- Keeping the Firebase bill zero required careful Firestore read/write rules and client-side caching.
+
+## Outcome
+
+TODO(Shifa): Add quantitative results you can defend in an interview (e.g., model accuracy, number of test users, demo feedback).
+
+## Links
+
+- GitHub: https://github.com/Shifask19/AgriAdvisor

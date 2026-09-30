@@ -1,0 +1,35 @@
+---
+slug: store-intelligence
+title: Store Intelligence Pipeline
+subtitle: Retail video analytics for a Purplle hackathon
+tags: ["AI/ML"]
+tech: ["YOLOv8", "ByteTrack", "FastAPI", "Python"]
+github: https://github.com/Shifask19/store-intelligence
+---
+
+## Problem
+
+Retail brands need to understand in-store customer behaviour — dwell time, traffic hot-spots, conversion funnel — without expensive hardware installations.
+
+## My Role
+
+TODO(Shifa): Describe your individual contribution within the hackathon team.
+
+## Approach & Architecture
+
+- **Detection** — YOLOv8 detects people in each video frame.
+- **Tracking** — ByteTrack assigns persistent IDs across frames so each shopper is counted once even as they move between zones.
+- **Backend** — FastAPI exposes endpoints that accept video segments and return analytics JSON (zone counts, dwell times, heatmap data).
+
+## Challenges
+
+- Real-time processing on hackathon-grade hardware required frame-skipping and resolution trade-offs.
+- ByteTrack ID stitching across occlusion events needed careful threshold tuning.
+
+## Outcome
+
+TODO(Shifa): Add hackathon result or demo metrics.
+
+## Links
+
+- GitHub: https://github.com/Shifask19/store-intelligence
