@@ -274,7 +274,7 @@ export function Hero() {
           transition={{ delay: 1.5, duration: 2, repeat: Infinity }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-400 dark:text-slate-600 hover:text-accent-500 transition-colors"
           onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-          aria-label="Scroll to about section"
+          aria-label="Scroll down to next section"
         >
           <ChevronDown size={26} aria-hidden="true" />
         </motion.button>

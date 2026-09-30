@@ -157,8 +157,7 @@ export function FeaturedProjects() {
                         "relative h-36 bg-gradient-to-br flex items-center justify-center overflow-hidden border-b border-slate-200 dark:border-slate-700/80",
                         gradient
                       )}
-                      role="img"
-                      aria-label={`${project.title} visual`}
+                      aria-hidden="true"
                     >
                       {/* Background pattern */}
                       <div className="absolute inset-0 dot-grid opacity-30" aria-hidden="true" />

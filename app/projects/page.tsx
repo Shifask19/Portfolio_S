@@ -38,8 +38,7 @@ export default function ProjectsPage() {
               {/* Placeholder */}
               <div
                 className="h-36 rounded-xl mb-4 bg-gradient-to-br from-accent-500/10 via-slate-100 dark:via-slate-800 to-accent-500/5 flex items-center justify-center text-accent-500/30 font-mono text-xs border border-slate-200 dark:border-slate-700"
-                role="img"
-                aria-label={`${project.title} screenshot placeholder`}
+                aria-hidden="true"
               >
                 {`< ${project.slug} />`}
               </div>
