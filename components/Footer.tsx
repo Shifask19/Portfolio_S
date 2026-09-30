@@ -16,7 +16,7 @@ export function Footer() {
       <div className="container-max py-8 flex flex-col sm:flex-row items-center justify-between gap-5">
         {/* Brand */}
         <div className="flex flex-col items-center sm:items-start gap-1">
-          <span className="font-bold text-sm gradient-text-subtle tracking-tight">
+          <span className="font-bold text-sm gradient-text-subtle tracking-tight" aria-hidden="true">
             {profile.name}
           </span>
           <p className="text-xs text-slate-400 flex items-center gap-1">

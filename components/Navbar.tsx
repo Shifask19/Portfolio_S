@@ -73,8 +73,8 @@ export function Navbar() {
             className="flex items-center gap-2 font-semibold text-lg tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 rounded-lg px-1"
             aria-label="Shifa Shaikh — home"
           >
-            <span className="gradient-text">SS</span>
-            <span className="hidden sm:inline text-slate-900 dark:text-slate-100">
+            <span className="gradient-text" aria-hidden="true">SS</span>
+            <span className="hidden sm:inline text-slate-900 dark:text-slate-100" aria-hidden="true">
               Shifa Shaikh
             </span>
           </Link>
