@@ -61,6 +61,11 @@ jobs:
           node-version: 22
           cache: "npm"
       - run: npm ci
+      # Restore the pre-built .next so `npm run start` works immediately
+      - uses: actions/download-artifact@v4
+        with:
+          name: nextjs-build
+          path: .next/
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
         env:
