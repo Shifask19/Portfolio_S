@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, CheckCircle2, Calendar, MapPin } from "lucide-react";
+import { CheckCircle2, Calendar } from "lucide-react";
 import { experiences } from "@/content/experience";
 import { useInView } from "@/hooks/useInView";
 

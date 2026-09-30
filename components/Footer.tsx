@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { GithubIcon, LinkedinIcon, Mail, Heart } from "lucide-react";
 import { profile } from "@/content/profile";
 

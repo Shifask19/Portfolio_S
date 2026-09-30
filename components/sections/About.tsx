@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, GraduationCap, Users, Briefcase, Rocket, Code2 } from "lucide-react";
+import { MapPin, GraduationCap, Briefcase, Rocket, Code2 } from "lucide-react";
 import { profile } from "@/content/profile";
 import { useInView } from "@/hooks/useInView";
 
