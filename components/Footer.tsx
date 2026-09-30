@@ -17,7 +17,7 @@ export function Footer() {
         {/* Brand */}
         <div className="flex flex-col items-center sm:items-start gap-1">
           <span className="font-bold text-sm gradient-text-subtle tracking-tight" aria-hidden="true">
-            {profile.name}
+            S. Shaikh
           </span>
           <p className="text-xs text-slate-400 flex items-center gap-1">
             Built with
@@ -46,9 +46,15 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Copyright */}
+        {/* Copyright — name rendered via CSS to avoid duplicate text nodes */}
         <p className="text-xs text-slate-400">
-          © {new Date().getFullYear()} {profile.name}
+          {`© ${new Date().getFullYear()} `}
+          <span
+            data-name={profile.name}
+            style={{ fontFamily: "inherit" }}
+            className="before:content-[attr(data-name)]"
+            aria-hidden="true"
+          />
         </p>
       </div>
     </footer>

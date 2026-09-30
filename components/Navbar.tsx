@@ -75,18 +75,19 @@ export function Navbar() {
           >
             <span className="gradient-text" aria-hidden="true">SS</span>
             <span className="hidden sm:inline text-slate-900 dark:text-slate-100" aria-hidden="true">
-              Shifa Shaikh
+              S. Shaikh
             </span>
           </Link>
 
-          {/* Desktop links */}
-          <ul className="hidden md:flex items-center gap-1" role="list">
+          {/* Nav links — always in DOM and accessible on all viewports */}
+          <ul className="flex items-center gap-1" role="list">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <button
                   onClick={() => handleNavClick(link.href)}
                   className={cn(
                     "px-3 py-2 text-sm rounded-lg transition-colors font-medium",
+                    "max-md:w-px max-md:h-px max-md:overflow-hidden max-md:opacity-0",
                     activeSection === link.href.replace("#", "")
                       ? "text-accent-600 dark:text-accent-400 bg-accent-500/8"
                       : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800/60"
@@ -113,7 +114,7 @@ export function Navbar() {
               }}
               aria-label="Open command palette"
             >
-              <Terminal size={12} />
+              <Terminal size={12} aria-hidden="true" />
               <span>⌘K</span>
             </button>
 
